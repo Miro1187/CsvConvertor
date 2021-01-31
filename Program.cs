@@ -25,12 +25,12 @@ namespace CSV_Convertor
 
             string path = Directory.GetCurrentDirectory();
 
-            string CSV1 = CSVConvertor<SomeObject>.ConvertAndWriteToFile(listOne, string.Format(@"{0}\csv_result1.txt", path));
+            string CSV1 = CSVConvertor<SomeObject>.ConvertAndWriteToFile(listOne, string.Format(@"{0}\csv_result1.csv", path));
             Console.Write(CSV1);
             Console.WriteLine();
 
-            string CSV2 = CSVConvertor<SomeOtherObject>.ConvertAndWriteToFile(listTwo, string.Format(@"{0}\csv_result2.txt", path));
-            Console.Write(CSV1);
+            string CSV2 = CSVConvertor<SomeOtherObject>.ConvertAndWriteToFile(listTwo, string.Format(@"{0}\csv_result2.csv", path));
+            Console.Write(CSV2);
 
             Console.ReadLine();
         }
